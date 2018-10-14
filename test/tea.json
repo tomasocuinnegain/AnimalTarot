@@ -1,0 +1,52 @@
+{
+  "Tests": [
+    {
+      "Convey": "auto-generated test for teaCreate",
+      "Zome": "tea",
+      "FnName": "teaCreate",
+      "Input": {
+        "type": "Black",
+        "grade": "SFTGFOP1"
+      },
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for teaRead",
+      "Zome": "tea",
+      "FnName": "teaRead",
+      "Input": "%h%",
+      "Output": {
+        "type": "Black",
+        "grade": "SFTGFOP1"
+      }
+    },
+    {
+      "Convey": "auto-generated test for teaUpdate",
+      "Zome": "tea",
+      "FnName": "teaUpdate",
+      "Input": "%h%",
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for teaDelete",
+      "Zome": "tea",
+      "FnName": "teaDelete",
+      "Input": "%h%",
+      "Output": "%h%"
+    },
+    {
+      "Convey": "auto-generated test for listTea",
+      "Zome": "tea",
+      "FnName": "listTea",
+      "Input": "",
+      "Output": {}
+    },
+    {
+      "Convey": "auto-generated test for searchTea",
+      "Zome": "tea",
+      "FnName": "searchTea",
+      "Input": "",
+      "Output": {}
+    }
+  ]
+}

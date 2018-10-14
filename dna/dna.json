@@ -1,0 +1,78 @@
+{
+  "Version": 1,
+  "UUID": "32e28461-5ffe-482c-8de6-a4f13c98be6b",
+  "Name": "tea-app",
+  "Properties": {
+    "description": "Tea Supply Chain",
+    "language": "en"
+  },
+  "PropertiesSchemaFile": "properties_schema.json",
+  "DHTConfig": {
+    "HashType": "sha2-256"
+  },
+  "Zomes": [
+    {
+      "Name": "tea",
+      "Description": "tea module",
+      "RibosomeType": "js",
+      "CodeFile": "tea.js",
+      "Entries": [
+        {
+          "Name": "tea",
+          "Required": true,
+          "DataFormat": "json",
+          "Sharing": "public",
+          "SchemaFile": "tea.json"
+        },
+        {
+            "Name":"anchor",
+            "DataFormat": "string",
+            "Sharing": "public"
+        },
+        {
+          "Name": "tea_link",
+          "DataFormat": "links",
+          "Sharing": "public"
+        }
+      ],
+      "Functions": [
+        {
+          "Name": "teaCreate",
+          "CallingType": "json",
+          "Exposure": "public"
+        },
+        {
+          "Name": "teaRead",
+          "CallingType": "string",
+          "Exposure": "public"
+        },
+        {
+          "Name": "teaUpdate",
+          "CallingType": "json",
+          "Exposure": "public"
+        },
+        {
+          "Name": "teaDelete",
+          "CallingType": "json",
+          "Exposure": "public"
+        },
+        {
+          "Name": "listTea",
+          "CallingType": "json",
+          "Exposure": "public"
+        },
+        {
+          "Name": "searchTea",
+          "CallingType": "json",
+          "Exposure": "public"
+        },
+        {
+
+          "Name": "getAllTea",
+          "CallingType": "string",
+          "Exposure": "public"
+        }
+      ]
+    }
+  ]
+}
